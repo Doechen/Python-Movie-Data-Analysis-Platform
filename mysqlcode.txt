@@ -1,0 +1,55 @@
+1.Create the framework of the movie database and the rest of the tables
+
+CREATE TABLE `movies` (
+  `title` varchar(255) DEFAULT NULL,
+  `link` varchar(255) DEFAULT NULL,
+  `country` varchar(255) DEFAULT NULL,
+  `directorandactor` varchar(255) DEFAULT NULL,
+  `year` int(11) DEFAULT NULL,
+  `score` float DEFAULT NULL,
+  `type` varchar(255) DEFAULT NULL,
+  `quote` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE `movie_country_num` (
+  `country` varchar(255) DEFAULT NULL COMMENT '国家或地区',
+  `num` int(11) DEFAULT NULL COMMENT '数量'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+ 
+
+CREATE TABLE `movie_year_num` (
+  `year` int(11) DEFAULT NULL COMMENT '年份',
+  `num` int(11) DEFAULT NULL COMMENT '数量'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE `movie_score_num` (
+  `score` float DEFAULT NULL COMMENT '评分',
+  `num` int(11) DEFAULT NULL COMMENT '数量'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE `movie_type_num` (
+  `type` varchar(255) DEFAULT NULL COMMENT '类型',
+  `num` int(11) DEFAULT NULL COMMENT '数量'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+2.Data tables that can be formed by direct code
+
+insert into movie_year_num
+  select
+  year, count(*) as num 
+  from movies
+  group by year;
+
+ 
+insert into movie_score_num
+  select
+  score, count(*) as num
+  from movies
+  group by score;
+
+
+ 
+ 
