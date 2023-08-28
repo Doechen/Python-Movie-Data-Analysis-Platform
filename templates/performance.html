@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>MOVIE</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    .shell{
+        height: 100vh;
+        overflow-x: hidden;
+        perspective: 3px;
+    }
+    .shell div{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-style: 30px;
+        letter-spacing: 2px;
+    }
+    .image{
+        transform: translateZ(-1px) scale(1.6);
+        background-size: cover;
+        height: 100vh;
+        z-index: -1;
+    }
+    .text{
+        height: 50vh;
+        background-color: #fff;
+    }
+    .text h1{
+        color: #000;
+    }
+    .heading{
+        z-index: -1;
+        transform: translateY(-30vh) translateZ(1px);
+        color: #fff;
+        font-size: 15px;
+    }
+</style>
+
+<body>
+    <div class="shell">
+        <div class="image" style="background-image: url('https://img2.doubanio.com/view/photo/raw/public/p2615939075.jpg');"></div>
+        <div class="heading">
+            <h1>Mankind was born on Earth. It was never meant to die here.</h1>
+        </div>
+        <div class="text">
+            <h1>Do not go gentle into that good night. Old age should burn and rave at close of day. Rage, Rage against the dying light.</h1>
+        </div>
+
+        <div class="image" style="background-image: url('https://img2.doubanio.com/view/photo/raw/public/p2573967966.jpg');"></div>
+        <div class="heading">
+            <h1>Not everybody could sail the ocean, but still we could share this dream.</h1>
+        </div>
+        <div class="text">
+            <h1>It wasn't what I saw that stopped me, Max. It was what I didn't see. You understand that?</h1>
+        </div>
+
+        <div class="image" style="background-image: url('https://img2.doubanio.com/view/photo/raw/public/p2632649960.jpg');"></div>
+        <div class="heading">
+            <h1>你可真是不疯魔不成活。唱戏得疯魔，不假，可要是活着也疯魔，在这人世上，在这凡人堆里，咱们可怎么活呀？</h1>
+        </div>
+        <div class="text">
+            <h1>差一年，一个月，一天，一个时辰，都不算一辈子。</h1>
+        </div>
+
+        <div class="image" style="background-image: url('https://img2.doubanio.com/view/photo/raw/public/p2606363327.jpg;"></div>
+        <div class="heading">
+            <h1>I just feel like...women, they...They have minds and they have souls, as well as just hearts. </h1>
+        </div>
+        <div class="text">
+            <h1>And I'm so sick of people saying that love is just all a woman is fit for. I'm so sick of it. But I'm... I'm so lonely.</h1>
+        </div>
+
+        <div class="image" style="background-image: url('https://img2.doubanio.com/view/photo/raw/public/p1222295025.jpg;"></div>
+        <div class="heading">
+            <h1>在茫茫人海中相遇相知相守无论谁都不会一帆风顺，只有一颗舍得付出懂得感恩的心才能拥有一生的爱和幸福。</h1>
+        </div>
+        <div class="text">
+            <h1>每个人心中都住着一个孩子，每个女孩子心里都有一座城堡。</h1>
+        </div>
+
+        <div class="image" style="background-image: url('https://img2.doubanio.com/view/photo/raw/public/p2892555807.jpg');"></div>
+        <div class="heading">
+            <h1>I guess it comes down a simple choise. Get busy living or get busy dying.</h1>
+        </div>
+    </div>
+</body>
+
+</html>
